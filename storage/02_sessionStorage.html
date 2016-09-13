@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>sessionStorage</title>
+</head>
+<body>
+
+<input type="text" id="userName">
+<input type="button" value="登录" id="btnLogin">
+<a href="03_session.html">其它页面查看</a>
+<script>
+    var btnLogin = document.getElementById('btnLogin');
+    btnLogin.onclick = function() {
+        var userName = document.getElementById('userName').value;
+        sessionStorage.userName = userName;
+    };
+</script>
+
+</body>
+</html>
